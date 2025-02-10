@@ -4,7 +4,7 @@ void update(string box[]);
 
 string box[9]={"1","2","3",
                "4","5","6",
-              "7","8","9"};
+               "7","8","9"};
 
 string player="*";
 int choice;
@@ -14,7 +14,8 @@ int main(){
     {
      cout<<"player " <<player<<":";
      cin>>choice;
-     if (choice<9 && choice>0 && box[choice]!="*" && box[choice]!="#"){
+     choice--;
+     if (choice<9 && choice>=0 && box[choice]!="*" && box[choice]!="#"){
         box[choice]=player;
         update(box);
         if (player=="*"){
