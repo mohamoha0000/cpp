@@ -11,6 +11,15 @@ int main() {
     
     // Print the address of x
     printf("Address of x: %p\n", (void*)&x);
+    while (1)
+    {
+        printf("Press Enter to exit...\n");
+        getchar();
+        if(x==55){
+            printf("good");
+        }
+        printf("%d",x);
+    }
     
     // Keep the program running until the user presses Enter
     printf("Press Enter to exit...\n");
